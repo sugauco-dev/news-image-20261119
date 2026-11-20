@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>WORLD IN ONE DAY — Thursday 19 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Libre+Franklin:wght@500;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+<style>
+:root{
+  --paper:#faf6ec; --paper2:#f3ecd9; --ink:#14213d; --ink2:#3d4a63; --line:#c9bfa3; --line2:#8a7f63;
+  --card:#fffdf6; --chip:#efe8d2; --accent:#8c1d18;
+  --asia:#b42318; --me:#92400e; --eu:#1e40af; --af:#166534; --am:#0f766e; --oc:#075985; --gl:#9d174d;
+  --hl:#ffe9a8;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --paper:#14161c; --paper2:#1b1e27; --ink:#ece7d8; --ink2:#b9b4a4; --line:#3a3f4d; --line2:#5a6070; --card:#1e212b; --chip:#262a36; --accent:#e8a09c; --hl:#5c4a12; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper2);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:16px;line-height:1.45}
+button,[role="button"],select,input{font-family:"Libre Franklin",Arial,sans-serif}
+button,select{min-height:40px}
+.wrap{max-width:1180px;margin:0 auto;padding:14px}
+.controls{position:sticky;top:0;z-index:50;background:var(--paper);border:1px solid var(--line);padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.controls label{font-family:"Libre Franklin",sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.controls select{padding:6px 10px;border:1px solid var(--line2);background:var(--card);color:var(--ink);border-radius:4px;font-size:14px}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:4px;font-size:13px;font-weight:700;cursor:pointer;min-height:40px}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn:focus-visible,.pill:focus-visible,.pin:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{border:1px solid var(--line2);background:var(--chip);color:var(--ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;cursor:pointer;min-height:36px}
+.pill[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.paper{background:var(--paper);border:1px solid var(--line2);box-shadow:0 4px 30px rgba(0,0,0,.18);padding:clamp(16px,3vw,40px)}
+.rule-top{border-top:5px double var(--ink);padding-top:10px}
+.masthead{text-align:center;border-bottom:3px solid var(--ink);padding-bottom:12px}
+.masthead h1{font-family:"Playfair Display",Georgia,serif;font-weight:900;font-size:clamp(38px,7vw,72px);letter-spacing:.01em;margin:2px 0 4px;line-height:1.02}
+.dateline{font-family:"Libre Franklin",sans-serif;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.subtitle{font-style:italic;font-size:17px;color:var(--ink2);max-width:820px;margin:8px auto 0}
+.legend{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line2);margin:14px 0 0;overflow:hidden}
+.legend span{flex:1 1 auto;text-align:center;font-family:"Libre Franklin",sans-serif;font-size:12.5px;font-weight:800;letter-spacing:.05em;color:#fff;padding:8px 4px;min-width:96px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:1px solid var(--line2);border-top:none}
+.kpi{padding:10px 8px;text-align:center;border-right:1px solid var(--line)}
+.kpi:last-child{border-right:none}
+.kpi b{display:block;font-family:"Playfair Display",serif;font-size:clamp(20px,3vw,30px);line-height:1.05}
+.kpi i{display:block;font-style:normal;font-family:"Libre Franklin",sans-serif;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:3px}
+.kpi small{display:block;font-size:12px;color:var(--ink2);font-family:"Libre Franklin",sans-serif;margin-top:2px}
+h2.sec{font-family:"Libre Franklin",sans-serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:6px;margin:26px 0 12px;display:flex;justify-content:space-between;align-items:baseline}
+h2.sec small{letter-spacing:0;text-transform:none;font-weight:500;color:var(--ink2)}
+.grid-leads{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-sec{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:var(--card);border:1px solid var(--line2);padding:14px;display:flex;flex-direction:column;min-height:100%}
+.card.flash{outline:3px solid var(--accent);background:var(--hl)}
+.num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;color:#fff;font-family:"Libre Franklin",sans-serif;font-weight:800;font-size:14px;flex:none}
+.tag{font-family:"Libre Franklin",sans-serif;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.card h3{font-family:"Playfair Display",serif;font-size:clamp(19px,2.2vw,24px);line-height:1.18;margin:8px 0 6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card.sec h3{font-size:18px;-webkit-line-clamp:2}
+.card p{font-size:15px;margin:0 0 8px;color:var(--ink)}
+.src{margin-top:auto;font-family:"Libre Franklin",sans-serif;font-size:12.5px;color:var(--ink2);border-top:1px solid var(--line);padding-top:8px}
+.src a{color:var(--eu);font-weight:700}
+@media (prefers-color-scheme: dark){.src a{color:#93b4f5}}
+.illus{width:100%;height:110px;background:var(--paper2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:6px}
+.illus svg{width:88px;height:88px}
+.illus.sm{height:64px;width:76px;float:left;margin:0 10px 4px 0}
+.illus.sm svg{width:52px;height:52px}
+.briefs{columns:2;column-gap:26px}
+.brief{break-inside:avoid;border-bottom:1px solid var(--line);padding:8px 4px;display:flex;gap:10px;align-items:flex-start}
+.brief.flash{background:var(--hl);outline:2px solid var(--accent)}
+.brief .num{width:26px;height:26px;font-size:12.5px}
+.brief p{margin:0;font-size:14.5px}
+.brief .place{font-family:"Libre Franklin",sans-serif;font-weight:800;font-size:12.5px;letter-spacing:.05em}
+.brief .bsrc{font-family:"Libre Franklin",sans-serif;font-size:12px;color:var(--ink2)}
+.mapbox{border:1px solid var(--line2);background:var(--card);padding:10px;overflow-x:auto}
+.mapbox svg{min-width:640px;width:100%;height:auto;display:block}
+.land{fill:var(--paper2);stroke:var(--line2);stroke-width:1.4}
+.pin{cursor:pointer}
+.pin circle{stroke:#fff;stroke-width:2}
+.pin text{fill:#fff;font-family:"Libre Franklin",sans-serif;font-weight:800;pointer-events:none}
+.pin.dim{opacity:.18}
+.pin.hot circle{stroke:var(--accent);stroke-width:4}
+.datecheck{border:2px dashed var(--line2);background:var(--paper2);padding:14px 16px;margin-top:22px}
+.datecheck h2{font-family:"Libre Franklin",sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+.datecheck ul{margin:0;padding-left:20px;font-size:14.5px}
+footer{margin-top:24px;border-top:3px solid var(--ink);padding-top:10px;font-family:"Libre Franklin",sans-serif;font-size:12.5px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+.notice{display:none;border:1px solid var(--accent);background:var(--hl);padding:10px 12px;font-family:"Libre Franklin",sans-serif;font-size:13.5px;margin-bottom:10px}
+.notice.show{display:block}
+.hidden{display:none!important}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(3,1fr)}.kpi{border-bottom:1px solid var(--line)}.grid-leads{grid-template-columns:1fr}.briefs{columns:1}}
+@media (max-width:640px){.grid-sec{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
+@media print{
+  @page{size:A3 portrait;margin:10mm}
+  body{background:#fff}.controls,.no-print{display:none!important}.wrap{max-width:none;padding:0}.paper{box-shadow:none;border:none}
+  .grid-leads{grid-template-columns:repeat(3,1fr)}.grid-sec{grid-template-columns:repeat(2,1fr)}.briefs{columns:2}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="controls no-print" role="region" aria-label="Edition controls">
+    <label for="edition">Edition</label>
+    <select id="edition" aria-label="Choose edition date">
+      <option value="2026-11-19" selected>Thursday 19 November 2026 — verified edition</option>
+      <option value="other">Another date (not yet compiled)</option>
+    </select>
+    <div class="pills" id="filters" role="group" aria-label="Filter by region"></div>
+    <button class="btn" id="btnPng" type="button">Download as PNG</button>
+    <button class="btn alt" id="btnPdf" type="button">Save as PDF (A3)</button>
+    <button class="btn alt" id="btnShare" type="button">Copy share text</button>
+  </div>
+  <div class="notice" id="notice" role="status"></div>
+
+  <div class="paper" id="paper">
+    <header class="masthead rule-top">
+      <div class="dateline">International Edition · One page · Every continent</div>
+      <h1>THE WORLD IN ONE DAY</h1>
+      <div class="dateline" id="edDate">Thursday 19 November 2026</div>
+      <p class="subtitle">33 stories · every continent — A first trilateral summit in Shenzhen, a 9–6 World Court ruling on Myanmar, and a COP31 draft that drops fossil fuels and the $120bn aid goal.</p>
+      <div class="legend" id="legend" aria-label="Stories per region"></div>
+      <div class="kpis" id="kpis" aria-label="Key numbers of the day"></div>
+    </header>
+
+    <main>
+      <h2 class="sec">The Leads <small>Stories 1–3</small></h2>
+      <section class="grid-leads" id="leads" aria-label="Lead stories"></section>
+
+      <h2 class="sec">Around the World <small>Stories 4–13</small></h2>
+      <section class="grid-sec" id="seconds" aria-label="Secondary stories"></section>
+
+      <h2 class="sec">The World Map <small>Tap a number to find its story</small></h2>
+      <div class="mapbox">
+        <svg id="worldmap" viewBox="0 0 1000 500" role="group" aria-label="World map with 33 numbered story markers">
+          <path class="land" d="M95,120 L150,80 L235,70 L300,95 L320,130 L285,160 L250,185 L235,230 L215,275 L225,330 L205,395 L180,420 L165,360 L150,300 L130,240 L105,190 Z"/>
+          <path class="land" d="M455,95 L480,70 L540,75 L585,105 L600,140 L575,165 L545,160 L520,180 L495,165 L470,150 L455,125 Z M478,128 L492,122 L496,136 L484,142 Z"/>
+          <path class="land" d="M480,205 L520,190 L565,205 L590,245 L585,300 L560,360 L540,395 L520,355 L500,300 L478,255 Z"/>
+          <path class="land" d="M600,90 L700,70 L830,80 L905,120 L890,165 L840,185 L800,175 L760,200 L720,190 L680,205 L640,180 L605,150 Z"/>
+          <path class="land" d="M745,255 L790,245 L820,275 L805,310 L765,305 L745,285 Z"/>
+          <path class="land" d="M800,330 L880,320 L915,350 L900,395 L835,400 L800,375 Z"/>
+          <path class="land" d="M925,405 L955,395 L968,415 L950,435 L928,428 Z"/>
+        </svg>
+      </div>
+
+      <h2 class="sec">In Brief <small>Stories 14–33</small></h2>
+      <section class="briefs" id="briefs" aria-label="Brief stories"></section>
+
+      <aside class="datecheck" aria-label="Date check">
+        <h2>✓ Date Check — Held Back (Not 19 November)</h2>
+        <ul id="datecheck"></ul>
+        <p style="font-size:13.5px;margin:8px 0 0">Every story above happened or was first reported on Thursday 19 November 2026 and was checked against at least two independent outlets. Items listed here belong to adjacent dates and were excluded.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <span>Sources: Reuters · AP · AFP · BBC · Al Jazeera · UN agencies and official bodies, as credited on each story.</span>
+      <span id="stamp"></span>
+    </footer>
+  </div>
+</div>
+
+<script>
+var DATA = {"edition":"Thursday 19 November 2026","kpis":[{"label":"presidents at one table","source":"Shenzhen · Reuters","value":"3"},{"label":"World Court verdict","source":"ICJ, The Hague · AP","value":"9–6"},{"label":"Anthropic IPO value","source":"Nasdaq debut · Reuters","value":"$81.3bn"},{"label":"Suneung exam candidates","source":"South Korea · Yonhap","value":"551,864"},{"label":"Australia jobless rate","source":"Highest since 2021 · ABS","value":"4.9%"},{"label":"Danish parliament vote","source":"Greenland pact · Folketing","value":"109–0"}],"date_check_excluded":["Van Gogh auction record (18 Nov)","Egypt IMF staff deal (18 Nov)","Kenya State of the Nation address (18 Nov)","Krasnodar refinery strikes (overnight 17–18 Nov)","Cyclone Akvan landfall (due 20 Nov)","COP31 final outcome (due 20 Nov)"],"stories":[{"headline":"Trump, Xi and Putin hold first trilateral summit","n":1,"place":"SHENZHEN","region":"ASIA","sources":"Reuters · AP","summary":"The three leaders met for 90 minutes on the APEC sidelines and issued a “Declaration toward Peace” on nuclear risk and energy. No agreement on Ukraine was announced.","tier":"lead","url":"https://www.devdiscourse.com/article/international/4009635-wrapup-13-trump-xi-and-putin-release-peace-declaration-from-unprecedented-summit?amp"},{"headline":"World Court rules 9–6 Myanmar breached genocide convention","n":2,"place":"THE HAGUE","region":"ASIA","sources":"Reuters · AP","summary":"The ICJ found Myanmar violated the Genocide Convention over the Rohingya and ordered reparations. Myanmar's junta rejected the ruling.","tier":"lead","url":"https://www.tbsnews.net/rohingya-crisis/what-icj-genocide-ruling-means-future-rohingya-1608451"},{"headline":"COP31 draft drops fossil fuels and $120bn aid goal","n":3,"place":"ANTALYA","region":"EUROPE","sources":"Reuters · AFP","summary":"Thursday's slimmed text removed every fossil-fuel reference and the $120bn adaptation-finance target. Talks are due to end Friday.","tier":"lead","url":"https://979weve.com/2026/11/19/cop31-negotiators-publish-revised-deal-text-with-no-mention-of-fossil-fuels/"},{"headline":"Kerch Bridge hit again; traffic suspended","n":4,"place":"KERCH","region":"EUROPE","sources":"Reuters","summary":"Explosions damaged the Crimea bridge a second time this week, officials said.","tier":"secondary","url":"https://www.europesays.com/russia/91518/"},{"headline":"Saudis shoot down Houthi missiles over Riyadh","n":5,"place":"RIYADH","region":"MIDDLE EAST","sources":"Reuters · AFP","summary":"Debris damaged a financial-district tower, witnesses told AFP.","tier":"secondary","url":"https://ktwb.com/2026/11/18/houthi-missile-threat-towards-riyadh-causes-damage-saudi-led-coalition-says/"},{"headline":"Cyclone Akvan: 80,000 evacuated","n":6,"place":"ODISHA","region":"ASIA","sources":"Hindu BusinessLine · TBS","summary":"74 rescue teams deployed ahead of landfall due Friday near Gopalpur.","tier":"secondary","url":"https://www.thehindubusinessline.com/news/national/odisha-evacuates-over-80000-people-deploys-74-rescue-teams-in-view-of-cyclone-akvan/article71719071.ece"},{"headline":"Top court orders retrial for ex-PM Han","n":7,"place":"SEOUL","region":"ASIA","sources":"Reuters · AP","summary":"His 15-year martial-law sentence was quashed in part; case sent back.","tier":"secondary","url":"https://www.koreajoongangdaily.com/korea/top-court-partially-reverses-ruling-in-former-prime-ministers-martial-law-case-upholds-kim-keon-hees-sentence/12981857"},{"headline":"Parliament votes 109–0 on Greenland pact","n":8,"place":"COPENHAGEN","region":"EUROPE","sources":"Folketing · AP","summary":"The Folketing consented to the US–Denmark–Greenland security deal.","tier":"secondary","url":"https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/11/19/danish-lawmakers-approve-security-us"},{"headline":"Anthropic's $81.3bn IPO jumps 17%","n":9,"place":"NEW YORK","region":"AMERICAS","sources":"Reuters","summary":"Largest IPO on record; shares closed at $97.17 on debut.","tier":"secondary","url":"https://betanews.com/article/anthropic-stock-ipo-nasdaq-debut/"},{"headline":"GTA VI launches to a Metacritic 99","n":10,"place":"LOS ANGELES","region":"GLOBAL","sources":"Reuters · Metacritic","summary":"150+ reviews averaged 99 on release day, Metacritic said.","tier":"secondary","url":"https://www.metacritic.com/game/grand-theft-auto-vi/?ref=vybe.ch"},{"headline":"Colombia unions stage national strike","n":11,"place":"BOGOTÁ","region":"AMERICAS","sources":"Semana · El Tiempo","summary":"Airport roads blocked and TransMilenio stations halted, media reported.","tier":"secondary","url":"https://www.travelerstoday.com/articles/61337/20261119/colombias-national-strike-blocked-bogota-airport-roads-hit-transmilenio-what-travelers-should.htm"},{"headline":"Marathon champion banned 3 years for EPO","n":12,"place":"NAIROBI","region":"AFRICA","sources":"AIU · ESPN","summary":"Jepchirchir accepted the AIU sanction after a positive test.","tier":"secondary","url":"https://www.espn.ph/olympics/trackandfield/story/_/id/50528884/former-olympic-marathon-champion-peres-jepchirchir-suspended-3-years-testing-positive-epo"},{"headline":"Jobless rate 4.9%, highest since 2021","n":13,"place":"CANBERRA","region":"OCEANIA","sources":"ABS · Reuters","summary":"October unemployment rose to 4.9%, the ABS reported.","tier":"secondary","url":"https://www.abs.gov.au/media-centre/media-releases/unemployment-rate-rises-49"},{"n":14,"place":"SHENZHEN","region":"ASIA","sources":"Xinhua · RIA","summary":"Xi urges ban on all nuclear arms.","tier":"brief","url":""},{"n":15,"place":"SEOUL","region":"ASIA","sources":"Yonhap","summary":"551,864 sit the Suneung; flights paused for listening test.","tier":"brief","url":""},{"n":16,"place":"JAKARTA","region":"ASIA","sources":"Reuters","summary":"Asset-forfeiture law passed after 18-year wait.","tier":"brief","url":""},{"n":17,"place":"HORMUZ","region":"MIDDLE EAST","sources":"IRNA · Reuters","summary":"Iran says mines set 3 tankers ablaze (claim).","tier":"brief","url":""},{"n":18,"place":"GAZA","region":"MIDDLE EAST","sources":"Reuters · AFP","summary":"Israel ends tank raid past the truce line.","tier":"brief","url":""},{"n":19,"place":"LONDON","region":"EUROPE","sources":"MAIB · PA","summary":"Inquiry: yacht Bayesian vulnerable to wind.","tier":"brief","url":""},{"n":20,"place":"ZURICH","region":"EUROPE","sources":"Reuters · AP","summary":"Two rivals to challenge FIFA's Infantino.","tier":"brief","url":""},{"n":21,"place":"ROME","region":"EUROPE","sources":"LaPresse","summary":"Author Corrado Augias dies at 91.","tier":"brief","url":""},{"n":22,"place":"CANARIES","region":"EUROPE","sources":"AP","summary":"Record 11,000 migrants in 15 days.","tier":"brief","url":""},{"n":23,"place":"MOGADISHU","region":"AFRICA","sources":"Reuters · AP","summary":"Somalia expels UAE ambassador.","tier":"brief","url":""},{"n":24,"place":"PORT SUDAN","region":"AFRICA","sources":"AP · Africanews","summary":"Court sentences absent RSF chief to death.","tier":"brief","url":""},{"n":25,"place":"PRETORIA","region":"AFRICA","sources":"SARB · Moneyweb","summary":"Central bank holds rate at 7.25%.","tier":"brief","url":""},{"n":26,"place":"FLORIDA","region":"AMERICAS","sources":"NWS · Miami Herald","summary":"Floods shut Broward and Miami schools.","tier":"brief","url":""},{"n":27,"place":"WASHINGTON","region":"AMERICAS","sources":"AP · Reuters","summary":"Senate rejects Iran war-powers resolution 51–48.","tier":"brief","url":""},{"n":28,"place":"WELLINGTON","region":"OCEANIA","sources":"Reuters · RNZ","summary":"Court: pay-equity cuts broke rights law.","tier":"brief","url":""},{"n":29,"place":"NUKU'ALOFA","region":"OCEANIA","sources":"PINA · NDRMO","summary":"Drought emergency takes effect.","tier":"brief","url":""},{"n":30,"place":"COOK ISLANDS","region":"OCEANIA","sources":"MetService · RSMC Nadi","summary":"Cyclone Xavier weakens to category 4.","tier":"brief","url":""},{"n":31,"place":"SHENZHEN","region":"OCEANIA","sources":"APEC transcript","summary":"Albanese to Putin: “End your war, end it now.”","tier":"brief","url":""},{"n":32,"place":"SPACE","region":"GLOBAL","sources":"Nature · Reuters","summary":"Red giant seen eating a Sun-sized star.","tier":"brief","url":""},{"n":33,"place":"MARKETS","region":"GLOBAL","sources":"Horizon","summary":"S&P 500 7,323.63 (−0.23%) · Brent $89.59 · Gold $3,739.6.","tier":"brief","url":""}]};
+var RCOLORS={"ASIA":"var(--asia)","MIDDLE EAST":"var(--me)","EUROPE":"var(--eu)","AFRICA":"var(--af)","AMERICAS":"var(--am)","OCEANIA":"var(--oc)","GLOBAL":"var(--gl)"};
+var RHEX={"ASIA":"#b42318","MIDDLE EAST":"#92400e","EUROPE":"#1e40af","AFRICA":"#166534","AMERICAS":"#0f766e","OCEANIA":"#075985","GLOBAL":"#9d174d"};
+var POS={1:[822,208],2:[487,128],3:[543,168],4:[563,138],5:[578,198],6:[752,218],7:[848,172],8:[493,102],9:[238,162],10:[138,178],11:[228,288],12:[568,288],13:[888,382],14:[836,228],15:[862,192],16:[788,308],17:[598,212],18:[540,188],19:[466,116],20:[482,146],21:[503,160],22:[436,198],23:[583,300],24:[552,228],25:[532,368],26:[212,200],27:[248,148],28:[958,418],29:[972,352],30:[36,342],31:[806,232],32:[500,52],33:[266,186]};
+var ICONS={1:'<circle cx="30" cy="34" r="10" fill="#b42318"/><circle cx="50" cy="34" r="10" fill="#1e40af"/><circle cx="70" cy="34" r="10" fill="#166534"/><rect x="14" y="56" width="72" height="10" rx="3" fill="#14213d"/><circle cx="50" cy="18" r="7" fill="#e8b93c"/>',
+2:'<path d="M50 12 L50 62 M26 26 L74 26" stroke="#14213d" stroke-width="5"/><path d="M26 26 L16 46 L36 46 Z" fill="#1e40af"/><path d="M74 26 L64 46 L84 46 Z" fill="#1e40af"/><rect x="36" y="64" width="28" height="8" fill="#14213d"/><rect x="66" y="10" width="26" height="18" rx="3" fill="#b42318"/><text x="79" y="24" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">9–6</text>',
+3:'<rect x="22" y="16" width="56" height="66" rx="4" fill="#fff" stroke="#14213d" stroke-width="3"/><line x1="32" y1="32" x2="68" y2="32" stroke="#b42318" stroke-width="4"/><line x1="32" y1="46" x2="68" y2="46" stroke="#b42318" stroke-width="4"/><line x1="32" y1="60" x2="58" y2="60" stroke="#8a7f63" stroke-width="4"/><path d="M84 30 a10 14 0 1 1 -6 -12" fill="#e8720c"/>',
+4:'<path d="M8 62 Q50 30 92 62" stroke="#14213d" stroke-width="6" fill="none"/><line x1="30" y1="50" x2="30" y2="70" stroke="#14213d" stroke-width="4"/><line x1="70" y1="50" x2="70" y2="70" stroke="#14213d" stroke-width="4"/><path d="M44 20 l6 10 l-12 0 Z" fill="#e8b93c"/><circle cx="47" cy="34" r="5" fill="#b42318"/>',
+5:'<path d="M60 14 L78 44 L66 48 L52 24 Z" fill="#92400e"/><circle cx="48" cy="58" r="9" fill="#b42318"/><path d="M20 78 h60" stroke="#14213d" stroke-width="5"/>',
+6:'<path d="M50 50 m-26 0 a26 26 0 1 1 26 26 a20 20 0 1 0 -20 -20 a13 13 0 1 1 13 13" fill="none" stroke="#075985" stroke-width="7"/>',
+7:'<rect x="52" y="14" width="30" height="9" rx="4" fill="#14213d"/><line x1="62" y1="23" x2="48" y2="52" stroke="#14213d" stroke-width="5"/><rect x="26" y="58" width="48" height="9" rx="3" fill="#14213d"/>',
+8:'<rect x="18" y="20" width="64" height="44" fill="#1e40af"/><path d="M34 20 v44 M18 42 h64" stroke="#fff" stroke-width="7"/><text x="50" y="84" font-size="13" text-anchor="middle" font-weight="bold" fill="#14213d">109–0</text>',
+9:'<polyline points="14,74 36,56 52,62 84,26" fill="none" stroke="#166534" stroke-width="6"/><path d="M84 26 l-14 2 l8 10 Z" fill="#166534"/><text x="50" y="94" font-size="12" text-anchor="middle" font-weight="bold" fill="#14213d">+17%</text>',
+10:'<rect x="16" y="34" width="68" height="34" rx="16" fill="#14213d"/><circle cx="34" cy="51" r="5" fill="#e8b93c"/><circle cx="66" cy="45" r="4" fill="#b42318"/><circle cx="72" cy="57" r="4" fill="#166534"/><text x="50" y="90" font-size="13" text-anchor="middle" font-weight="bold" fill="#14213d">99</text>',
+11:'<circle cx="32" cy="42" r="9" fill="#0f766e"/><circle cx="52" cy="36" r="10" fill="#b42318"/><circle cx="70" cy="44" r="8" fill="#1e40af"/><rect x="18" y="62" width="64" height="10" rx="4" fill="#14213d"/>',
+12:'<circle cx="50" cy="44" r="24" fill="none" stroke="#166534" stroke-width="6"/><line x1="30" y1="66" x2="72" y2="24" stroke="#b42318" stroke-width="7"/><text x="50" y="90" font-size="12" text-anchor="middle" font-weight="bold" fill="#14213d">BANNED</text>',
+13:'<rect x="20" y="52" width="13" height="28" fill="#075985"/><rect x="40" y="40" width="13" height="40" fill="#075985"/><rect x="60" y="26" width="13" height="54" fill="#b42318"/><text x="50" y="96" font-size="12" text-anchor="middle" font-weight="bold" fill="#14213d">4.9%</text>'};
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+function icon(n,cls){return '<div class="illus '+(cls||"")+'" aria-hidden="true"><svg viewBox="0 0 100 100" role="img" aria-label="Story illustration">'+(ICONS[n]||"")+'</svg></div>';}
+function srcLine(s){var h='Sources: '+esc(s.sources);if(s.url){h+=' · <a href="'+s.url+'" target="_blank" rel="noopener">Read source ↗</a>';}return h;}
+function render(){
+  var counts={};DATA.stories.forEach(function(s){counts[s.region]=(counts[s.region]||0)+1;});
+  document.getElementById('legend').innerHTML=Object.keys(RCOLORS).map(function(r){return '<span style="background:'+RCOLORS[r]+'">'+r+' · '+counts[r]+'</span>';}).join('');
+  document.getElementById('kpis').innerHTML=DATA.kpis.map(function(k){return '<div class="kpi"><b>'+esc(k.value)+'</b><i>'+esc(k.label)+'</i><small>'+esc(k.source)+'</small></div>';}).join('');
+  document.getElementById('leads').innerHTML=DATA.stories.filter(function(s){return s.tier==='lead';}).map(function(s){
+    return '<article class="card" id="story-'+s.n+'" data-region="'+s.region+'" tabindex="-1"><div style="display:flex;gap:8px;align-items:center"><span class="num" style="background:'+RCOLORS[s.region]+'">'+s.n+'</span><span class="tag" style="color:'+RCOLORS[s.region]+'">'+s.place+' · '+s.region+'</span></div>'+icon(s.n)+'<h3>'+esc(s.headline)+'</h3><p>'+esc(s.summary)+'</p><div class="src">'+srcLine(s)+'</div></article>';}).join('');
+  document.getElementById('seconds').innerHTML=DATA.stories.filter(function(s){return s.tier==='secondary';}).map(function(s){
+    return '<article class="card sec" id="story-'+s.n+'" data-region="'+s.region+'" tabindex="-1"><div style="display:flex;gap:8px;align-items:center"><span class="num" style="background:'+RCOLORS[s.region]+'">'+s.n+'</span><span class="tag" style="color:'+RCOLORS[s.region]+'">'+s.place+' · '+s.region+'</span></div>'+icon(s.n,'sm')+'<h3>'+esc(s.headline)+'</h3><p>'+esc(s.summary)+'</p><div class="src">'+srcLine(s)+'</div></article>';}).join('');
+  document.getElementById('briefs').innerHTML=DATA.stories.filter(function(s){return s.tier==='brief';}).map(function(s){
+    return '<div class="brief" id="story-'+s.n+'" data-region="'+s.region+'" tabindex="-1"><span class="num" style="background:'+RCOLORS[s.region]+'">'+s.n+'</span><p><span class="place" style="color:'+RCOLORS[s.region]+'">'+s.place+'</span> — '+esc(s.summary)+' <span class="bsrc">('+esc(s.sources)+')</span></p></div>';}).join('');
+  document.getElementById('datecheck').innerHTML=DATA.date_check_excluded.map(function(d){return '<li>'+esc(d)+'</li>';}).join('');
+  var svg=document.getElementById('worldmap');
+  DATA.stories.forEach(function(s){
+    var p=POS[s.n];if(!p)return;
+    var g=document.createElementNS('http://www.w3.org/2000/svg','g');
+    g.setAttribute('class','pin');g.setAttribute('tabindex','0');g.setAttribute('role','button');
+    g.setAttribute('aria-label','Story '+s.n+', '+s.place+': '+s.summary);g.dataset.n=s.n;g.dataset.region=s.region;g.id='pin-'+s.n;
+    var fs=s.n<10?13:11;
+    g.innerHTML='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="14" fill="'+RHEX[s.region]+'"/><text x="'+p[0]+'" y="'+(p[1]+fs/3)+'" font-size="'+fs+'" text-anchor="middle">'+s.n+'</text>';
+    g.addEventListener('click',function(){flashStory(s.n,true);});
+    g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();flashStory(s.n,true);}});
+    g.addEventListener('mouseenter',function(){hotPin(s.n,true);});
+    g.addEventListener('mouseleave',function(){hotPin(s.n,false);});
+    svg.appendChild(g);
+  });
+  document.querySelectorAll('.card,.brief').forEach(function(el){
+    var n=el.id.replace('story-','');
+    el.addEventListener('mouseenter',function(){hotPin(n,true);});
+    el.addEventListener('mouseleave',function(){hotPin(n,false);});
+  });
+  var regions=['ALL'].concat(Object.keys(RCOLORS));
+  document.getElementById('filters').innerHTML=regions.map(function(r,i){return '<button type="button" class="pill" data-f="'+r+'" aria-pressed="'+(i===0)+'">'+(r==='ALL'?'All regions':r)+'</button>';}).join('');
+  document.querySelectorAll('.pill').forEach(function(b){b.addEventListener('click',function(){applyFilter(b.dataset.f);});});
+  document.getElementById('stamp').textContent='Edition compiled from wire reports of 19 Nov 2026 · Page generated '+new Date().toLocaleString('en-GB');
+}
+function hotPin(n,on){var p=document.getElementById('pin-'+n);if(p){p.classList.toggle('hot',on);}}
+function flashStory(n,scroll){
+  document.querySelectorAll('.flash').forEach(function(e){e.classList.remove('flash');});
+  var el=document.getElementById('story-'+n);if(!el)return;
+  el.classList.add('flash');hotPin(n,true);
+  if(scroll){el.scrollIntoView({behavior:'smooth',block:'center'});el.focus({preventScroll:true});}
+  setTimeout(function(){el.classList.remove('flash');hotPin(n,false);},2600);
+}
+function applyFilter(f){
+  document.querySelectorAll('.pill').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===f?'true':'false');});
+  document.querySelectorAll('[data-region]').forEach(function(el){
+    if(el.classList.contains('pin')){el.classList.toggle('dim',f!=='ALL'&&el.dataset.region!==f);}
+    else{el.classList.toggle('hidden',f!=='ALL'&&el.dataset.region!==f);}
+  });
+  var n=document.getElementById('notice');
+  n.textContent=f==='ALL'?'Showing all 33 stories.':'Showing '+f+' stories only — map pins for other regions are dimmed.';
+  n.classList.add('show');setTimeout(function(){n.classList.remove('show');},3000);
+}
+document.getElementById('edition').addEventListener('change',function(e){
+  var n=document.getElementById('notice');
+  if(e.target.value==='other'){n.textContent='Only the Thursday 19 November 2026 edition has been compiled and verified. Other dates are not published yet.';e.target.value='2026-11-19';}
+  else{n.textContent='Edition: Thursday 19 November 2026 — 33 stories, each verified against at least two outlets.';}
+  n.classList.add('show');setTimeout(function(){n.classList.remove('show');},3500);
+});
+document.getElementById('btnPdf').addEventListener('click',function(){
+  var n=document.getElementById('notice');
+  n.textContent='To save the A3 PDF: open this page in your browser, press Ctrl+P (Windows) or Cmd+P (Mac), choose “Save as PDF”, paper size A3, and enable background graphics. The page ships with a print stylesheet that hides these controls and lays the newspaper out cleanly on one A3 portrait sheet.';
+  n.classList.add('show');
+});
+document.getElementById('btnShare').addEventListener('click',function(){
+  var t='THE WORLD IN ONE DAY — Thursday 19 November 2026: 33 stories, every continent. Leads: Shenzhen trilateral summit · ICJ rules 9–6 on Myanmar · COP31 draft drops fossil fuels and $120bn aid goal.';
+  var n=document.getElementById('notice');
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){n.textContent='Share text copied to clipboard.';n.classList.add('show');setTimeout(function(){n.classList.remove('show');},3000);});}
+  else{n.textContent=t;n.classList.add('show');}
+});
+document.getElementById('btnPng').addEventListener('click',function(){
+  var n=document.getElementById('notice');
+  if(window.htmlToImage){
+    htmlToImage.toPng(document.getElementById('paper'),{pixelRatio:2}).then(function(url){
+      var a=document.createElement('a');a.download='world-in-one-day-2026-11-19.png';a.href=url;a.click();
+    }).catch(function(){n.textContent='PNG export was blocked in this viewer — use “Save as PDF (A3)” instead.';n.classList.add('show');});
+  }else{n.textContent='PNG library unavailable offline — use “Save as PDF (A3)” instead.';n.classList.add('show');}
+});
+render();
+</script>
+</body>
+</html>

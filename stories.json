@@ -1,0 +1,399 @@
+{
+ "date_check_excluded": [
+  "Van Gogh auction record (18 Nov)",
+  "Egypt IMF staff deal (18 Nov)",
+  "Kenya State of the Nation address (18 Nov)",
+  "Krasnodar refinery strikes (overnight 17–18 Nov)",
+  "Cyclone Akvan landfall (due 20 Nov)",
+  "COP31 final outcome (due 20 Nov)",
+  {
+   "item": "England ODI series win in Hobart",
+   "date": "18 Nov 2026"
+  }
+ ],
+ "edition": "Thursday 19 November 2026",
+ "kpis": [
+  {
+   "label": "presidents at one table",
+   "source": "Shenzhen · Reuters",
+   "value": "3"
+  },
+  {
+   "label": "World Court verdict",
+   "source": "ICJ, The Hague · AP",
+   "value": "9–6"
+  },
+  {
+   "label": "Anthropic IPO value",
+   "source": "Nasdaq debut · Reuters",
+   "value": "$81.3bn"
+  },
+  {
+   "label": "Suneung exam candidates",
+   "source": "South Korea · Yonhap",
+   "value": "551,864"
+  },
+  {
+   "label": "Australia jobless rate",
+   "source": "Highest since 2021 · ABS",
+   "value": "4.9%"
+  },
+  {
+   "label": "Danish parliament vote",
+   "source": "Greenland pact · Folketing",
+   "value": "109–0"
+  }
+ ],
+ "stories": [
+  {
+   "headline": "Trump, Xi and Putin hold first trilateral summit",
+   "n": 1,
+   "place": "SHENZHEN",
+   "region": "ASIA",
+   "sources": "Reuters · AP",
+   "summary": "The three leaders met for 90 minutes on the APEC sidelines and issued a “Declaration toward Peace” on nuclear risk and energy. No agreement on Ukraine was announced.",
+   "tier": "lead",
+   "url": "https://www.devdiscourse.com/article/international/4009635-wrapup-13-trump-xi-and-putin-release-peace-declaration-from-unprecedented-summit?amp"
+  },
+  {
+   "headline": "World Court rules 9–6 Myanmar breached genocide convention",
+   "n": 2,
+   "place": "THE HAGUE",
+   "region": "ASIA",
+   "sources": "Reuters · AP",
+   "summary": "The ICJ found Myanmar violated the Genocide Convention over the Rohingya and ordered reparations. Myanmar's junta rejected the ruling.",
+   "tier": "lead",
+   "url": "https://www.tbsnews.net/rohingya-crisis/what-icj-genocide-ruling-means-future-rohingya-1608451"
+  },
+  {
+   "headline": "COP31 draft drops fossil fuels and $120bn aid goal",
+   "n": 3,
+   "place": "ANTALYA",
+   "region": "EUROPE",
+   "sources": "Reuters · AFP",
+   "summary": "Thursday's slimmed text removed every fossil-fuel reference and the $120bn adaptation-finance target. Talks are due to end Friday.",
+   "tier": "lead",
+   "url": "https://979weve.com/2026/11/19/cop31-negotiators-publish-revised-deal-text-with-no-mention-of-fossil-fuels/"
+  },
+  {
+   "headline": "Kerch Bridge hit again; traffic suspended",
+   "n": 4,
+   "place": "KERCH",
+   "region": "EUROPE",
+   "sources": "Reuters",
+   "summary": "Explosions damaged the Crimea bridge a second time this week, officials said.",
+   "tier": "secondary",
+   "url": "https://www.europesays.com/russia/91518/"
+  },
+  {
+   "headline": "Saudis shoot down Houthi missiles over Riyadh",
+   "n": 5,
+   "place": "RIYADH",
+   "region": "MIDDLE EAST",
+   "sources": "Reuters · AFP",
+   "summary": "Debris damaged a financial-district tower, witnesses told AFP.",
+   "tier": "secondary",
+   "url": "https://ktwb.com/2026/11/18/houthi-missile-threat-towards-riyadh-causes-damage-saudi-led-coalition-says/"
+  },
+  {
+   "headline": "Cyclone Akvan: 80,000 evacuated",
+   "n": 6,
+   "place": "ODISHA",
+   "region": "ASIA",
+   "sources": "Hindu BusinessLine · TBS",
+   "summary": "74 rescue teams deployed ahead of landfall due Friday near Gopalpur.",
+   "tier": "secondary",
+   "url": "https://www.thehindubusinessline.com/news/national/odisha-evacuates-over-80000-people-deploys-74-rescue-teams-in-view-of-cyclone-akvan/article71719071.ece"
+  },
+  {
+   "headline": "Top court orders retrial for ex-PM Han",
+   "n": 7,
+   "place": "SEOUL",
+   "region": "ASIA",
+   "sources": "Reuters · AP",
+   "summary": "His 15-year martial-law sentence was quashed in part; case sent back.",
+   "tier": "secondary",
+   "url": "https://www.koreajoongangdaily.com/korea/top-court-partially-reverses-ruling-in-former-prime-ministers-martial-law-case-upholds-kim-keon-hees-sentence/12981857"
+  },
+  {
+   "headline": "Parliament votes 109–0 on Greenland pact",
+   "n": 8,
+   "place": "COPENHAGEN",
+   "region": "EUROPE",
+   "sources": "Folketing · AP",
+   "summary": "The Folketing consented to the US–Denmark–Greenland security deal.",
+   "tier": "secondary",
+   "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/11/19/danish-lawmakers-approve-security-us"
+  },
+  {
+   "headline": "Anthropic's $81.3bn IPO jumps 17%",
+   "n": 9,
+   "place": "NEW YORK",
+   "region": "AMERICAS",
+   "sources": "Reuters",
+   "summary": "Largest IPO on record; shares closed at $97.17 on debut.",
+   "tier": "secondary",
+   "url": "https://betanews.com/article/anthropic-stock-ipo-nasdaq-debut/"
+  },
+  {
+   "headline": "GTA VI launches to a Metacritic 99",
+   "n": 10,
+   "place": "LOS ANGELES",
+   "region": "GLOBAL",
+   "sources": "Reuters · Metacritic",
+   "summary": "150+ reviews averaged 99 on release day, Metacritic said.",
+   "tier": "secondary",
+   "url": "https://www.metacritic.com/game/grand-theft-auto-vi/?ref=vybe.ch"
+  },
+  {
+   "headline": "Colombia unions stage national strike",
+   "n": 11,
+   "place": "BOGOTÁ",
+   "region": "AMERICAS",
+   "sources": "Semana · El Tiempo",
+   "summary": "Airport roads blocked and TransMilenio stations halted, media reported.",
+   "tier": "secondary",
+   "url": "https://www.travelerstoday.com/articles/61337/20261119/colombias-national-strike-blocked-bogota-airport-roads-hit-transmilenio-what-travelers-should.htm"
+  },
+  {
+   "headline": "Marathon champion banned 3 years for EPO",
+   "n": 12,
+   "place": "NAIROBI",
+   "region": "AFRICA",
+   "sources": "AIU · ESPN",
+   "summary": "Jepchirchir accepted the AIU sanction after a positive test.",
+   "tier": "secondary",
+   "url": "https://www.espn.ph/olympics/trackandfield/story/_/id/50528884/former-olympic-marathon-champion-peres-jepchirchir-suspended-3-years-testing-positive-epo"
+  },
+  {
+   "headline": "Jobless rate 4.9%, highest since 2021",
+   "n": 13,
+   "place": "CANBERRA",
+   "region": "OCEANIA",
+   "sources": "ABS · Reuters",
+   "summary": "October unemployment rose to 4.9%, the ABS reported.",
+   "tier": "secondary",
+   "url": "https://www.abs.gov.au/media-centre/media-releases/unemployment-rate-rises-49"
+  },
+  {
+   "n": 14,
+   "place": "SHENZHEN",
+   "region": "ASIA",
+   "sources": "Xinhua · RIA",
+   "summary": "Xi urges ban on all nuclear arms.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 15,
+   "place": "SEOUL",
+   "region": "ASIA",
+   "sources": "Yonhap",
+   "summary": "551,864 sit the Suneung; flights paused for listening test.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 16,
+   "place": "JAKARTA",
+   "region": "ASIA",
+   "sources": "Reuters",
+   "summary": "Asset-forfeiture law passed after 18-year wait.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 17,
+   "place": "HORMUZ",
+   "region": "MIDDLE EAST",
+   "sources": "IRNA · Reuters",
+   "summary": "Iran says mines set 3 tankers ablaze (claim).",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 18,
+   "place": "GAZA",
+   "region": "MIDDLE EAST",
+   "sources": "Reuters · AFP",
+   "summary": "Israel ends tank raid past the truce line.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 19,
+   "place": "LONDON",
+   "region": "EUROPE",
+   "sources": "MAIB · PA",
+   "summary": "Inquiry: yacht Bayesian vulnerable to wind.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 20,
+   "place": "ZURICH",
+   "region": "EUROPE",
+   "sources": "Reuters · AP",
+   "summary": "Two rivals to challenge FIFA's Infantino.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 21,
+   "place": "ROME",
+   "region": "EUROPE",
+   "sources": "LaPresse",
+   "summary": "Author Corrado Augias dies at 91.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 22,
+   "place": "CANARIES",
+   "region": "EUROPE",
+   "sources": "AP",
+   "summary": "Record 11,000 migrants in 15 days.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 23,
+   "place": "MOGADISHU",
+   "region": "AFRICA",
+   "sources": "Reuters · AP",
+   "summary": "Somalia expels UAE ambassador.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 24,
+   "place": "PORT SUDAN",
+   "region": "AFRICA",
+   "sources": "AP · Africanews",
+   "summary": "Court sentences absent RSF chief to death.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 25,
+   "place": "PRETORIA",
+   "region": "AFRICA",
+   "sources": "SARB · Moneyweb",
+   "summary": "Central bank holds rate at 7.25%.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 26,
+   "place": "FLORIDA",
+   "region": "AMERICAS",
+   "sources": "NWS · Miami Herald",
+   "summary": "Floods shut Broward and Miami schools.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 27,
+   "place": "WASHINGTON",
+   "region": "AMERICAS",
+   "sources": "AP · Reuters",
+   "summary": "Senate rejects Iran war-powers resolution 51–48.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 28,
+   "place": "WELLINGTON",
+   "region": "OCEANIA",
+   "sources": "Reuters · RNZ",
+   "summary": "Court: pay-equity cuts broke rights law.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 29,
+   "place": "NUKU'ALOFA",
+   "region": "OCEANIA",
+   "sources": "PINA · NDRMO",
+   "summary": "Drought emergency takes effect.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 30,
+   "place": "COOK ISLANDS",
+   "region": "OCEANIA",
+   "sources": "MetService · RSMC Nadi",
+   "summary": "Cyclone Xavier weakens to category 4.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 31,
+   "place": "SHENZHEN",
+   "region": "OCEANIA",
+   "sources": "APEC transcript",
+   "summary": "Albanese to Putin: “End your war, end it now.”",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 32,
+   "place": "SPACE",
+   "region": "GLOBAL",
+   "sources": "Nature · Reuters",
+   "summary": "Red giant seen eating a Sun-sized star.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 33,
+   "place": "MARKETS",
+   "region": "GLOBAL",
+   "sources": "Horizon",
+   "summary": "S&P 500 7,323.63 (−0.23%) · Brent $89.59 · Gold $3,739.6.",
+   "tier": "brief",
+   "url": ""
+  },
+  {
+   "n": 34,
+   "tier": "brief",
+   "region": "AFRICA",
+   "place": "PORT LOUIS",
+   "headline": "Africa instant payments hit $1.8tn",
+   "summary": "Instant payment systems in Africa processed 71.4 billion transactions worth $1.8 trillion in 2025, the SIIPS 2026 report launched Thursday in Mauritius said.",
+   "sources": "AfricaNenda · EIN Presswire",
+   "url": "https://www.einpresswire.com/article/957250167/new-data-by-siips-african-instant-payments-hit-71-billion-transactions-but-trust-gaps-threaten-the-next-leap"
+  },
+  {
+   "n": 35,
+   "tier": "brief",
+   "region": "EUROPE",
+   "place": "BARCELONA",
+   "headline": "Barça women rout Servette 6–0",
+   "summary": "Clàudia Pina's hat-trick helped Barcelona beat Servette 6-0 to reach the Women's Champions League quarter-finals for the 12th season running.",
+   "sources": "UEFA · Sportradar",
+   "url": "https://www.uefa.com/womenschampionsleague/news/02ab-221c7df694f0-76cf288e421e-1000--uefa-women-s-champions-league-matchday-5-thursday-round-up-o/"
+  },
+  {
+   "n": 36,
+   "tier": "brief",
+   "region": "ASIA",
+   "place": "TOKYO",
+   "headline": "India–Japan sign defence pact",
+   "summary": "At their fourth 2+2 meeting in Tokyo, India and Japan signed a letter of intent for Japanese live-fire training at Indian ranges under 'Design with Japan, Make in India'.",
+   "sources": "AP · ANI",
+   "url": "https://www.newkerala.com/news/a/india-japan-push-defence-manufacturing-under-design-japan-830.htm"
+  },
+  {
+   "n": 37,
+   "tier": "brief",
+   "region": "GLOBAL",
+   "place": "SPACE",
+   "headline": "Pulsar found spinning 261× a second",
+   "summary": "A cryptography-inspired lattice method found pulsar PSR J1622-7204 in 15 years of NASA Fermi data in about 10 hours of computing; results published Thursday in Physical Review Letters.",
+   "sources": "NASA · Phys.org",
+   "url": "https://www.europesays.com/ie/790246/"
+  }
+ ]
+}
